@@ -1,14 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "requirements.h"
+#include "image.h"
 #include "image.c"
-#include "ascii.c"
-
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image/stb_image.h";
-#define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "stb_image/stb_image_write.h"
+#include "ascii.h"
 
 int main(int argc, char *argv[]){
-    printf(image_to_grayscale("Images/blackbuck.bmp", "wb"));
+    image_to_grayscale("Images/land.bmp");
     return 0;
 }
